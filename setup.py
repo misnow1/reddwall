@@ -1,6 +1,4 @@
-#!/usr/bin/env python
 
-#from distutils.core import setup
 from setuptools import setup
 
 setup(name='ReddWall',
@@ -11,5 +9,5 @@ setup(name='ReddWall',
       url='http://github.com/matthewbauer/reddwall',
       install_requires=['requests', 'beautifulsoup4', 'praw', 'wxpython'],
       packages=['detools'],
-      scripts=['reddwall.py'],
-)
+      scripts=['reddwall.py', 'alien.png'],
+      )
