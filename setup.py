@@ -7,7 +7,10 @@ setup(name='ReddWall',
       author='Matthew Bauer',
       author_email='mjbauer95@gmail.com',
       url='http://github.com/matthewbauer/reddwall',
-      install_requires=['requests', 'beautifulsoup4', 'praw', 'wxpython'],
+      install_requires=['requests', 'beautifulsoup4', 'praw'],
       packages=['detools'],
-      scripts=['reddwall.py', 'alien.png'],
+      entry_points={
+          'console_scripts': [
+              'reddwall = reddwall:main'
+          ]},
       )
